@@ -1,0 +1,41 @@
+div.father {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+}
+
+.cuahang {
+  margin-top: 150px;
+}
+
+.cuahang h1 {
+  text-align: center;
+}
+
+div.lang1 {
+  margin-left: 30px;
+}
+
+div.lang1 > p:first-child {
+  margin-top: 0;
+}
+
+div.lang {
+  width: 35%;
+}
+
+div.lang img {
+  width: 100%;
+}
+
+/*CC*/
+div.infos {
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 15px;
+}
+
+div.infos > div > ul {
+  list-style-type: none;
+}

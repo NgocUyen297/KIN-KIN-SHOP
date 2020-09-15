@@ -1,0 +1,412 @@
+@import url(../css/base.css);
+@import url(../css/grid.css);
+
+/* CSS cho phan nav */
+nav.lienket {
+  background-color: #e0e0e0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  padding: 15px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  transition: padding ease 0.3s;
+}
+
+ul.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  position: relative;
+  color: #004289;
+  padding: 15px 25px;
+  text-transform: capitalize;
+  transition: all ease 0.3s;
+}
+
+a.active {
+  color: #007bff !important;
+}
+
+.menu > li > a:hover {
+  color: #007bff;
+}
+
+p.thuonghieu {
+  color: red;
+  font-size: 30px;
+}
+
+sub.year {
+  font-size: 13px;
+}
+
+/* CSS cho menu Con */
+.smallmenu i {
+  margin-left: 5px;
+}
+
+.menuCon {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 80px;
+  z-index: 2;
+  width: 200px;
+  transition: all ease 0.3s;
+  box-shadow: 0 0 30px #7f89a19a;
+  background-color: #fff;
+}
+
+.menuCon li:hover {
+  background-color: #e0e0e0;
+}
+
+.menuCon li:hover a {
+  color: #007bff;
+}
+.smallmenu:hover .menuCon {
+  visibility: visible;
+  opacity: 1;
+  top: 50px;
+}
+
+/* CSS cho header*/
+div.father-images {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+div.images > img {
+  height: 400px;
+  width: 100%;
+}
+
+div.anhnho {
+  display: block;
+}
+
+div.anhnho > ul {
+  display: flex;
+  justify-content: center;
+}
+
+/*  CSS CHO BANNER*/
+#marker {
+  margin-top: 150px;
+}
+
+.myslide:first-child {
+  display: block;
+}
+
+.myslide {
+  display: none;
+}
+
+div.banner {
+  display: flex;
+}
+
+div.bigbanner {
+  width: 65%;
+  padding: 0px 10px 0px 10px;
+}
+
+div.bigbanner > img {
+  width: 100%;
+  height: 100%;
+}
+
+div.smallbanner {
+  width: 45%;
+}
+
+div.anh {
+  height: 50%;
+}
+
+div.anh > img {
+  width: 100%;
+}
+
+div.con2 {
+  padding-top: 10px;
+}
+
+/* CSS cho big line */
+div.bigline {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+div.bigline hr {
+  color: red;
+  background: red;
+  border: 0;
+  height: 1px;
+  margin: 10px;
+}
+
+div.topsale {
+  border: 1px solid orange;
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+div.topsale > p {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* CSS SECTION */
+section.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* CSS CHO PRODUCT*/
+div.product {
+  margin: 5px;
+  width: 23%;
+  text-align: center;
+  padding: 5px;
+  vertical-align: middle;
+  position: relative;
+}
+
+div.review {
+  margin: 0;
+}
+
+div.product > div > img {
+  width: 100%;
+  border: 0;
+}
+
+div.price {
+  width: 90%;
+  padding-top: 10px;
+}
+
+div.price a {
+  text-decoration: none;
+  color: black;
+}
+
+div.product:hover {
+  border: 0.1px solid lightgray;
+}
+
+div.price a:hover {
+  color: brown;
+  text-decoration: underline;
+}
+
+/* CSS CHO FOOTER */
+footer {
+  background-color: black;
+  padding: 30px 0;
+  color: white;
+}
+
+.thongtin {
+  padding: 10px 0 0;
+  border-top: 1px solid white;
+}
+
+.lienhe h4 {
+  padding: 0 0 10px;
+  font-size: 20px;
+}
+
+.lienhe img {
+  width: 100%;
+  height: auto;
+}
+/* CSS CHO GO TO TOP */
+div.gototop a {
+  background-color: gray;
+  position: fixed;
+  bottom: 100px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+.sukienscroll {
+  padding: 0 !important;
+}
+
+/* CSS cho links moblie */
+nav.links_mobile {
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+}
+
+div.nav_moblie {
+  width: 40%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: all ease 0.3s;
+}
+
+.nav_moblie label {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+div.nav_moblie > ul {
+  position: absolute;
+  top: 35px;
+  flex-direction: column;
+  width: 100%;
+}
+
+div.nav_moblie > ul li > a {
+  background-color: white;
+  padding-top: 30px;
+  color: black;
+  border-bottom: 1px solid lightgray;
+}
+
+.layout_black {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.3;
+  display: none;
+}
+
+input#mobile_input:checked ~ .layout_black {
+  display: block;
+}
+
+input#mobile_input:checked ~ div.nav_moblie {
+  transform: translateX(0%);
+}
+
+label.bars {
+  position: absolute;
+  top: 15px;
+  color: red;
+  font-size: 30px;
+  left: 15px;
+}
+
+/* repsonsive tablet - mobile */
+@media screen and (max-width: 1024px) {
+  .nav_thuongHieu {
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .smallbanner {
+    display: none;
+  }
+
+  nav.lienket {
+    display: none;
+  }
+
+  div.bigbanner {
+    width: 100%;
+  }
+
+  .father-images {
+    display: none;
+  }
+
+  nav.links_mobile {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .menu > li {
+    text-align: center;
+  }
+
+  .menuCon {
+    display: none;
+    top: 0;
+    opacity: unset;
+    visibility: unset;
+    position: unset;
+  }
+
+  .smallmenu:hover .menuCon {
+    display: block;
+  }
+
+  div.nav_moblie > ul li > a {
+    background-color: unset;
+    color: black;
+  }
+}
+
+/* responsive tablet */
+@media screen and (min-width: 741px) and (max-width: 1024px) {
+}
+
+/* responsive mobile */
+@media screen and (max-width: 739px) {
+  div.nav_moblie {
+    width: 100%;
+    background-color: #000;
+    opacity: 0.8;
+  }
+
+  div.nav_moblie label i {
+    color: white;
+  }
+
+  div.nav_moblie > ul {
+    top: 10%;
+  }
+
+  div.nav_moblie > ul li > a {
+    color: white;
+    font-weight: bold;
+  }
+
+  .menuCon > li > a {
+    color: #000 !important;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
